@@ -1,3 +1,5 @@
+all : report/_build/index.html
+
 results/isles.dat : scripts/wordcount.py data/isles.txt
 	python scripts/wordcount.py --input_file=data/isles.txt \
 		--output_file=results/isles.dat
